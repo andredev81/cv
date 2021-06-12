@@ -1,0 +1,31 @@
+/*CSS Syntax
+  selector { property: value;}
+  Selector - is the "who?"
+  Property - is the "What?" - what do you want to change in the selector?
+  Value - is the "How?"*/
+body {
+  background-color: #f7f3e9;
+}
+
+h1 {
+  color: #5eaaa8;
+}
+
+h2 {
+  color: #f05945;
+}
+
+hr {
+  border: 5px dotted;
+  border-style: none none dotted;
+  color: #a3d2ca;
+  width: 3%;
+}
+
+/* border-style
+When one value is specified, it applies the same style to all four sides.
+When two values are specified, the first style applies to the top and bottom, the second to the left and right.
+When three values are specified, the first style applies to the top, the second to the left and right, the third to the bottom.
+When four values are specified, the styles apply to the top, right, bottom, and left in that order (clockwise).
+
+We can also use "border-style: none;", seguido "border-top-style: dotted;"*/
