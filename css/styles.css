@@ -1,31 +1,153 @@
-/*CSS Syntax
-  selector { property: value;}
-  Selector - is the "who?"
-  Property - is the "What?" - what do you want to change in the selector?
-  Value - is the "How?"*/
 body {
-  background-color: #f7f3e9;
+  text-align: center;
+  color: #40514E;
+}
+
+.top-container {
+  background-color: #F8F3D4;
+  position: relative;
+  padding-top: 100px;
 }
 
 h1 {
-  color: #5eaaa8;
+  line-height: 1.5;
+  margin-top: 50px;
+  margin-bottom: 0;
+  color: #00B8A9;
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 5.7rem;
+  /* 16px = 100% = 1em - utilizar em (mais adequado ainda rem - root em) ou % (dynamically) é mais adequado, pois a fonte se ajustará de acordo com as alterações de configurações feitas pelo usuário, como ajustes de zoom. */
 }
 
 h2 {
-  color: #f05945;
+  color: #00B8A9;
+  font-size: 2.5rem;
+  font-weight: normal;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 400px;
+  top: 50px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 400px;
+  bottom: 300px;
+}
+
+.middle-container {
+  margin: 100px 0;
+}
+
+.intro {
+  width: 30%;
+  margin: auto;
+}
+
+.profile {
+padding-top: 50px;
+}
+
+p {
+  line-height: 1.5; /* Em line-height não trabalhamos com unidades, mas somente com escala, então devemos utilizar somente o número. */
 }
 
 hr {
-  border: 5px dotted;
-  border-style: none none dotted;
-  color: #a3d2ca;
-  width: 3%;
+  border-top: 5px dotted #FFDE7D;
+  border-bottom: none; /* Or border-style: dotted none none; */
+  margin: 100px auto;
+  width: 5%;
 }
 
-/* border-style
-When one value is specified, it applies the same style to all four sides.
-When two values are specified, the first style applies to the top and bottom, the second to the left and right.
-When three values are specified, the first style applies to the top, the second to the left and right, the third to the bottom.
-When four values are specified, the styles apply to the top, right, bottom, and left in that order (clockwise).
+.skill-row {
+  width: 50%;
+  margin: 100px auto; /* Dessa forma o nosso texto e nossas imagens retornam ao centro da tela, e mantenho uma margem superior e inferior de 100px */
+  text-align: left;
+}
 
-We can also use "border-style: none;", seguido "border-top-style: dotted;"*/
+.VetImage {
+  border-radius: 50%;
+  float: left;
+  margin-right: 30px;
+  width: 15%;
+}
+
+.professorImage {
+  border-radius: 50%;
+  float: right;
+  margin-left: 30px;
+  width: 15%;
+}
+
+.DevImage {
+  border-radius: 50%;
+  float: left;
+  margin-right: 30px;
+  width: 15%;
+}
+
+h3 {
+  color: #F6416C;
+}
+
+.contactMessage {
+  width: 40%;
+  margin: 40px auto 60px;
+}
+
+a {
+  color: #F8F3D4;
+  font-family: 'Montserrat', sans-serif;
+  margin: 20px 10px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #E8E3A1;
+}
+
+/*.contact-me {
+  margin-bottom: 60px;
+}*/
+
+.btn {
+  background: #f585a1;
+  background-image: -webkit-linear-gradient(top, #f585a1, #f5426f);
+  background-image: -moz-linear-gradient(top, #f585a1, #f5426f);
+  background-image: -ms-linear-gradient(top, #f585a1, #f5426f);
+  background-image: -o-linear-gradient(top, #f585a1, #f5426f);
+  background-image: linear-gradient(to bottom, #f585a1, #f5426f);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  color: #EAF6F6;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #f585a1;
+  background-image: -webkit-linear-gradient(top, #f585d1, #f542de);
+  background-image: -moz-linear-gradient(top, #f585d1, #f542de);
+  background-image: -ms-linear-gradient(top, #f585d1, #f542de);
+  background-image: -o-linear-gradient(top, #f585d1, #f542de);
+  background-image: linear-gradient(top bottom, #f585d1, #f542de);
+  text-decoration: none;
+}
+
+.bottom-container {
+  background-color: #F6416C;
+  padding: 50px 0 20px;
+}
+
+.copyright {
+  color: #E8E3A1;
+  font-size: 0.75rem;
+}
